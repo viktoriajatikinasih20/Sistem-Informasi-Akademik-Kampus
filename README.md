@@ -7,6 +7,78 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
+
+# 📘 Sistem Informasi Akademik Kampus
+
+Sistem informasi akademik berbasis web yang dibangun menggunakan Laravel, MySQL, dan Bootstrap. Proyek ini bertujuan untuk memudahkan pengelolaan data mahasiswa, nilai, dan transkrip secara terpusat dan efisien melalui antarmuka yang responsif dan ramah pengguna.
+
+---
+
+## 🔧 Tech Stack
+
+- **Backend**: PHP (Laravel)
+- **Frontend**: HTML5, CSS3 (Bootstrap), JavaScript
+- **Database**: MySQL
+- **Tools**: Git, Composer
+
+---
+
+## 📝 Deskripsi Proyek
+
+Sistem ini memungkinkan admin untuk:
+- Mengelola data mahasiswa
+- Menginput dan memperbarui nilai akademik
+- Mencetak transkrip nilai
+- Melakukan autentikasi login admin
+
+---
+
+## 👩‍💻 Peran
+
+Saya bertanggung jawab sebagai **Fullstack Developer**, meliputi:
+- Perancangan struktur basis data relasional
+- Pengembangan backend menggunakan Laravel
+- Pembuatan frontend dengan Bootstrap dan JavaScript
+- Pengujian fungsionalitas sistem dan debugging
+- Penyusunan form input/output data
+
+---
+
+## ✨ Fitur Utama
+
+- ✅ Login untuk administrator
+- ✅ CRUD data mahasiswa
+- ✅ Input & update nilai akademik
+- ✅ Cetak transkrip nilai
+- ✅ UI responsif dan ramah pengguna
+- ✅ Validasi form & alert interaktif
+
+---
+
+## 🚀 Cara Menjalankan di Lokal
+
+```bash
+# Masuk ke folder proyek
+cd path/ke/proyek
+
+# Generate kunci aplikasi Laravel
+php artisan key:generate
+
+# Reset database, migrasi ulang, dan isi data awal (seeder)
+php artisan migrate:fresh --seed
+
+# Jalankan server lokal Laravel
+php artisan serve
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
