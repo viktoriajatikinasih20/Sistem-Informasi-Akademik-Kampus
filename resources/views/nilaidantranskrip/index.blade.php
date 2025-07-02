@@ -5,8 +5,8 @@
 @section('content')
 <h2>Nilai & Transkrip Mahasiswa (Seluruh Data)</h2>
 
-<a href="{{ route('nilaidantranskrip.permahasiswa') }}" class="btn btn-info mb-3">
-    Lihat Nilai & Transkrip Per Mahasiswa
+<a href="{{ route('nilaidantranskrip.create') }}" class="btn btn-info mb-3">
+    + Tambah Nilai
 </a>
 
 <table class="table table-bordered table-striped">
@@ -61,4 +61,9 @@
         @endforelse
     </tbody>
 </table>
+
+<a href="{{ route('nilaidantranskrip.permahasiswa') }}" class="btn btn-info mb-3">
+    Lihat Nilai & Transkrip Per Mahasiswa
+</a>
+
 @endsection

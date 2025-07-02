@@ -6,13 +6,13 @@
 
     {{-- Tampilkan error validasi jika ada --}}
     @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul class="mb-0">
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
+    <div class="alert alert-danger">
+        <ul class="mb-0">
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
     @endif
 
     <div class="card shadow-sm">
@@ -31,8 +31,18 @@
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Fakultas</label>
-                    <input type="text" name="fakultas" class="form-control" value="{{ old('fakultas') }}" required>
+                    <label for="fakultas" class="form-label">Fakultas</label>
+                    <select name="fakultas" id="fakultas" class="form-control" required>
+                        <option value="">- Pilih Fakultas -</option>
+                        <option value="fmipa" {{ old('fakultas') == 'fmipa' ? 'selected' : '' }}>FMIPA</option>
+                        <option value="fbs" {{ old('fakultas') == 'fbs' ? 'selected' : '' }}>FBS</option>
+                        <option value="fe" {{ old('fakultas') == 'fe' ? 'selected' : '' }}>FE</option>
+                        <option value="fis" {{ old('fakultas') == 'fis' ? 'selected' : '' }}>FIS</option>
+                        <option value="fh" {{ old('fakultas') == 'fh' ? 'selected' : '' }}>FH</option>
+                        <option value="ft" {{ old('fakultas') == 'ft' ? 'selected' : '' }}>FT</option>
+                        <option value="fik" {{ old('fakultas') == 'fik' ? 'selected' : '' }}>FIK</option>
+                        <option value="fip" {{ old('fakultas') == 'fip' ? 'selected' : '' }}>FIP</option>
+                    </select>
                 </div>
 
                 <div class="mb-3">
@@ -44,7 +54,7 @@
                     <label class="form-label">Tempat Lahir</label>
                     <input type="text" name="tempat_lahir" class="form-control" value="{{ old('tempat_lahir') }}" required>
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label">Tanggal Lahir</label>
                     <input type="date" name="tanggal_lahir" class="form-control" value="{{ old('tanggal_lahir') }}" required>
