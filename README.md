@@ -26,7 +26,7 @@ Sistem informasi akademik berbasis web yang dibangun menggunakan Laravel, MySQL,
 
 - **Backend**: PHP (Laravel)
 - **Frontend**: HTML5, CSS3 (Bootstrap), JavaScript
-- **Database**: MySQL
+- **Database**: SQLite
 - **Tools**: Git, Composer
 
 ---
