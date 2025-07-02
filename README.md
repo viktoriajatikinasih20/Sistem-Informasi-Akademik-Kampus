@@ -77,6 +77,7 @@ php artisan migrate:fresh --seed
 
 # Jalankan server lokal Laravel
 php artisan serve
+```
 
 
 ## About Laravel
